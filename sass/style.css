@@ -5,12 +5,12 @@ body {
 }
 
 .active {
-  color: #2E58FF !important;
+  color: #2e58ff !important;
 }
 
 nav {
   padding: 22px 0;
-  background-color: #EFF5FF;
+  background-color: #eff5ff;
 }
 
 nav .logo img {
@@ -18,28 +18,28 @@ nav .logo img {
 }
 
 nav .nav li a {
-  color: #070D59;
+  color: #070d59;
   font-weight: 500;
   font-size: 1.2rem;
 }
 
 nav .nav li a:hover {
-  color: #2E58FF !important;
+  color: #2e58ff !important;
 }
 
 header {
-  background-color: #EFF5FF;
+  background-color: #eff5ff;
   padding: 60px 0 0;
 }
 
 header .header_textos h6 {
-  color: #070D59;
+  color: #070d59;
   font-weight: 600;
   font-size: 2.5rem;
 }
 
 header .header_textos h1 {
-  color: #2E58FF;
+  color: #2e58ff;
   font-weight: 600;
   font-size: 3.5rem;
 }
@@ -59,5 +59,39 @@ header .header_search .input_search {
 
 header .header_photos .header_photos_woman img {
   height: 500px;
+}
+
+.box_main {
+  margin: 80px 0;
+}
+
+.box_main .box_main_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 80px;
+}
+
+.box_main .box_main_title h1 {
+  color: #ee6f57;
+  font-size: 2rem;
+  font-weight: 600;
+  position: relative;
+}
+
+.box_main .box_main_title h1:after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 50%;
+  background-color: #ee6f57;
+  left: 25%;
+  right: 25%;
+  bottom: -15px;
+  border-radius: 20px;
 }
 /*# sourceMappingURL=style.css.map */
