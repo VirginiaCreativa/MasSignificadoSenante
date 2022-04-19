@@ -22,4 +22,42 @@ nav .nav li a {
   font-weight: 500;
   font-size: 1.2rem;
 }
+
+nav .nav li a:hover {
+  color: #2E58FF !important;
+}
+
+header {
+  background-color: #EFF5FF;
+  padding: 60px 0 0;
+}
+
+header .header_textos h6 {
+  color: #070D59;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+header .header_textos h1 {
+  color: #2E58FF;
+  font-weight: 600;
+  font-size: 3.5rem;
+}
+
+header .header_textos p {
+  color: #333;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+header .header_search .input_search {
+  border: none;
+  padding: 15px;
+  width: 50%;
+  border-radius: 60px;
+}
+
+header .header_photos .header_photos_woman img {
+  height: 500px;
+}
 /*# sourceMappingURL=style.css.map */

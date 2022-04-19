@@ -33,6 +33,46 @@ nav {
         color: $blue_2;
         font-weight: 500;
         font-size: 1.2rem;
+        &:hover {
+          color: $blue_1 !important;
+        }
+      }
+    }
+  }
+}
+
+header {
+  background-color: $background;
+  padding: 60px 0 0;
+  .header_textos {
+    h6 {
+      color: $blue_2;
+      font-weight: 600;
+      font-size: 2.5rem;
+    }
+    h1 {
+      color: $blue_1;
+      font-weight: 600;
+      font-size: 3.5rem;
+    }
+    p {
+      color: #333;
+      font-weight: 400;
+      font-size: 1.6rem
+    }
+  }
+  .header_search {
+    .input_search {
+      border: none;
+      padding: 15px;
+      width: 50%;
+      border-radius: 60px;
+    }
+  }
+  .header_photos {
+    .header_photos_woman {
+      img {
+        height: 500px;
       }
     }
   }
