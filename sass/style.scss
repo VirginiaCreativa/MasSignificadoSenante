@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$blue_1: #2E58FF;
+$blue_2: #070D59;
+$blue_3: #B9DCFF;
+$blue_4: #D1E7FF;
+$white: #FFFFFF;
+$orange: #EE6F57;
+$background: #EFF5FF;
+/* Fondo */
+
+body {
+  font-family: 'Barlow', serif !important;
+}
+
+.active {
+  color: $blue_1 !important;
+}
+
+nav {
+  padding: 22px 0;
+  background-color: $background;
+
+  .logo {
+    img {
+      max-height: 40px;
+    }
+  }
+
+  .nav {
+    li {
+      a {
+        color: $blue_2;
+        font-weight: 500;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
