@@ -76,7 +76,7 @@ header .header_photos .header_photos_woman img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
 }
 
 .box_main .box_main_title h1 {
@@ -117,10 +117,10 @@ header .header_photos .header_photos_woman img {
 }
 
 .box_main .box_main_items .box_main_item:hover .link .bx-right-arrow-alt {
-  visibility: visible;
-  opacity: 1;
   left: 0;
+  opacity: 1;
   width: 20px;
+  visibility: visible;
 }
 
 .box_main .box_main_items .box_main_item .video {
@@ -136,12 +136,12 @@ header .header_photos .header_photos_woman img {
 }
 
 .box_main .box_main_items .box_main_item a.link .bx-right-arrow-alt {
-  visibility: hidden;
   position: relative;
-  opacity: 0;
-  left: -20px;
-  width: 0;
   top: 2.5px;
+  left: -20px;
+  opacity: 0;
+  width: 0;
+  visibility: hidden;
 }
 
 .box_main .box_main_items .box_main_item .box_main_item_meta {
@@ -173,5 +173,11 @@ header .header_photos .header_photos_woman img {
   color: #b9dcff;
   font-size: 1.5rem;
   background-color: transparent;
+}
+
+footer {
+  margin-top: 180px;
+  min-height: 400px;
+  background-color: #070d59;
 }
 /*# sourceMappingURL=style.css.map */
