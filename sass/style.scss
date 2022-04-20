@@ -86,8 +86,8 @@ header {
       width: 100%;
       padding: 11px 18px;
       border: none;
-      border-radius: 60px;
       font-size: 1.2rem;
+      border-radius: 60px;
 
       &:focus {
         border-color: none !important;
@@ -120,12 +120,55 @@ header {
   }
 
   .header_photos {
+    position: relative;
+
     .header_photos_woman {
       display: flex;
+      position: relative;
       justify-content: center;
 
       img {
-        height: 500px;
+        height: 460px;
+        z-index: 6;
+      }
+    }
+
+    .header_photos_woman_circles {
+      position: absolute;
+      left: 300px;
+      bottom: 218px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .circle {
+        position: absolute;
+        border-radius: 100%;
+      }
+
+      .circle_1 {
+        width: 300px;
+        height: 300px;
+        background-color: $blue_1;
+        z-index: 3;
+        @extend .circle;
+      }
+
+      .circle_2 {
+        width: 360px;
+        height: 360px;
+        background-color: $blue_3;
+        z-index: 2;
+        @extend .circle;
+
+      }
+
+      .circle_3 {
+        width: 420px;
+        height: 420px;
+        background-color: $blue_4;
+        z-index: 1;
+        @extend .circle;
       }
     }
   }

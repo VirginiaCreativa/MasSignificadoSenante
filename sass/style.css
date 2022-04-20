@@ -76,8 +76,8 @@ header .header_search .input_search {
   width: 100%;
   padding: 11px 18px;
   border: none;
-  border-radius: 60px;
   font-size: 1.2rem;
+  border-radius: 60px;
 }
 
 header .header_search .input_search:focus {
@@ -109,17 +109,64 @@ header .header_search .btnSearch i {
   font-weight: 600;
 }
 
+header .header_photos {
+  position: relative;
+}
+
 header .header_photos .header_photos_woman {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
 header .header_photos .header_photos_woman img {
-  height: 500px;
+  height: 460px;
+  z-index: 6;
+}
+
+header .header_photos .header_photos_woman_circles {
+  position: absolute;
+  left: 300px;
+  bottom: 218px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header_photos .header_photos_woman_circles .circle, header .header_photos .header_photos_woman_circles .circle_1, header .header_photos .header_photos_woman_circles .circle_2, header .header_photos .header_photos_woman_circles .circle_3 {
+  position: absolute;
+  border-radius: 100%;
+}
+
+header .header_photos .header_photos_woman_circles .circle_1 {
+  width: 300px;
+  height: 300px;
+  background-color: #2e58ff;
+  z-index: 3;
+}
+
+header .header_photos .header_photos_woman_circles .circle_2 {
+  width: 360px;
+  height: 360px;
+  background-color: #b9dcff;
+  z-index: 2;
+}
+
+header .header_photos .header_photos_woman_circles .circle_3 {
+  width: 420px;
+  height: 420px;
+  background-color: #d1e7ff;
+  z-index: 1;
 }
 
 .box_main {
