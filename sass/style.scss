@@ -17,6 +17,11 @@ body {
   color: $blue_1 !important;
 }
 
+a {
+  text-decoration: none;
+  color: $orange;
+}
+
 nav {
   padding: 22px 0;
   background-color: $background;
@@ -31,8 +36,8 @@ nav {
     li {
       a {
         color: $blue_2;
-        font-weight: 500;
         font-size: 1.2rem;
+        font-weight: 500;
         &:hover {
           color: $blue_1 !important;
         }
@@ -42,30 +47,30 @@ nav {
 }
 
 header {
-  background-color: $background;
   padding: 60px 0 0;
+  background-color: $background;
   .header_textos {
     h6 {
       color: $blue_2;
-      font-weight: 600;
       font-size: 2.5rem;
+      font-weight: 600;
     }
     h1 {
       color: $blue_1;
-      font-weight: 600;
       font-size: 3.5rem;
+      font-weight: 600;
     }
     p {
       color: #333;
-      font-weight: 400;
       font-size: 1.6rem;
+      font-weight: 400;
     }
   }
   .header_search {
     .input_search {
-      border: none;
-      padding: 15px;
       width: 50%;
+      padding: 15px;
+      border: none;
       border-radius: 60px;
     }
   }
@@ -83,24 +88,64 @@ header {
   .box_main_title {
     display: flex;
     justify-content: center;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
     h1 {
+      position: relative;
       color: $orange;
       font-size: 2rem;
       font-weight: 600;
-      position: relative;
       &:after {
         content: '';
         display: block;
         position: absolute;
-        height: 4px;
-        width: 50%;
-        background-color: $orange;
-        left: 25%;
         right: 25%;
         bottom: -15px;
+        left: 25%;
+        width: 50%;
+        height: 4px;
+        background-color: $orange;
         border-radius: 20px;
       }
+    }
+  }
+  .box_main_items {
+    .box_main_item {
+      padding: 30px;
+      margin: 0 30px;
+      box-shadow:  0 0 40px rgba($color: #2e58ff, $alpha: 0.15);
+      background-color: #fff;
+      border-radius: 20px;
+      .video {
+        height: 230px;
+        background-color: #ddd;
+        margin-bottom: 20px;
+      }
+    }
+    .box_main_item_meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .title {
+        h2 {
+          color: $blue_2;
+          text-transform: capitalize;
+        }
+      }
+      .clicks {
+        ul {
+          display: flex;
+          margin-bottom: 0;
+          li {
+            button {
+              border: none;
+              background-color: transparent;
+              color: $blue_3;
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+
     }
   }
 }
