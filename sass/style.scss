@@ -140,10 +140,17 @@ header {
       display: flex;
       justify-content: center;
       align-items: center;
+      transition: all 0.4s ease-in-out;
 
       .circle {
         position: absolute;
         border-radius: 100%;
+      }
+
+      .moveCirce {
+        animation-duration: 10s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
       }
 
       .circle_1 {
@@ -151,8 +158,25 @@ header {
         height: 300px;
         background-color: $blue_1;
         z-index: 3;
+        animation-name: moveCircleIn_1;
+        @extend .moveCirce;
         @extend .circle;
+
+        @keyframes moveCircleIn_1 {
+          from {
+            transform: translate(0, 0);
+          }
+
+          50% {
+            transform: translate(10px, 20px);
+          }
+
+          to {
+            transform: translate(0, 0);
+          }
+        }
       }
+
 
       .circle_2 {
         width: 360px;
@@ -160,7 +184,22 @@ header {
         background-color: $blue_3;
         z-index: 2;
         @extend .circle;
+        @extend .moveCirce;
+        animation-name: moveCircleIn_2;
 
+        @keyframes moveCircleIn_2 {
+          from {
+            transform: translate(0, 0);
+          }
+
+          50% {
+            transform: translate(-10px, -20px);
+          }
+
+          to {
+            transform: translate(0, 0);
+          }
+        }
       }
 
       .circle_3 {
@@ -169,6 +208,22 @@ header {
         background-color: $blue_4;
         z-index: 1;
         @extend .circle;
+        @extend .moveCirce;
+        animation-name: moveCircleIn_3;
+
+        @keyframes moveCircleIn_3 {
+          from {
+            transform: translate(0, 0);
+          }
+
+          50% {
+            transform: translate(20px, 10px);
+          }
+
+          to {
+            transform: translate(0, 0);
+          }
+        }
       }
     }
   }
