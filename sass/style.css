@@ -386,6 +386,14 @@ header .header_photos .header_photos_woman_circles .circle_3 {
   background-color: transparent;
 }
 
+.box_main .box_main_items .box_main_item .box_main_item_meta .clicks ul li button:hover {
+  color: #2e58ff;
+}
+
+.box_main .box_main_items .box_main_item .box_main_item_meta .clicks ul li button:active {
+  color: #2e58ff;
+}
+
 footer {
   margin-top: 180px;
   min-height: 400px;
