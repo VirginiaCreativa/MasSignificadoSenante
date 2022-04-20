@@ -31,6 +31,53 @@ nav .nav li a:hover {
   color: #2e58ff !important;
 }
 
+.search, header .header_search, .box_palabras .box_palabras_search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.search .input_search, header .header_search .input_search, .box_palabras .box_palabras_search .input_search {
+  width: 100%;
+  padding: 11px 18px;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 60px;
+}
+
+.search .input_search:focus, header .header_search .input_search:focus, .box_palabras .box_palabras_search .input_search:focus {
+  border-color: none !important;
+  outline-style: none !important;
+}
+
+.search .btnSearch, header .header_search .btnSearch, .box_palabras .box_palabras_search .btnSearch {
+  position: absolute;
+  right: -1px;
+  width: 52px;
+  height: 52px;
+  border: none;
+  background-color: #ee6f57;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.search .btnSearch:hover, header .header_search .btnSearch:hover, .box_palabras .box_palabras_search .btnSearch:hover {
+  background-color: #ff876f;
+}
+
+.search .btnSearch i, header .header_search .btnSearch i, .box_palabras .box_palabras_search .btnSearch i {
+  position: relative;
+  top: 2px;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
 header {
   padding: 60px 0 0;
   background-color: #eff5ff;
@@ -61,52 +108,7 @@ header .header_textos p {
 }
 
 header .header_search {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 60%;
-  margin: 0 auto;
-}
-
-header .header_search .input_search {
-  width: 100%;
-  padding: 11px 18px;
-  border: none;
-  font-size: 1.2rem;
-  border-radius: 60px;
-}
-
-header .header_search .input_search:focus {
-  border-color: none !important;
-  outline-style: none !important;
-}
-
-header .header_search .btnSearch {
-  position: absolute;
-  right: -1px;
-  width: 50px;
-  height: 50px;
-  border: none;
-  background-color: #ee6f57;
-  border-radius: 100%;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-
-header .header_search .btnSearch:hover {
-  background-color: #ff876f;
-}
-
-header .header_search .btnSearch i {
-  position: relative;
-  top: 2px;
-  color: #fff;
-  font-size: 1.6rem;
-  font-weight: 600;
 }
 
 header .header_photos {
@@ -398,5 +400,18 @@ footer {
   margin-top: 180px;
   min-height: 400px;
   background-color: #070d59;
+}
+
+.box_palabras {
+  min-height: 50vh;
+}
+
+.box_palabras .box_palabras_search {
+  width: 400px;
+  margin: 60px auto;
+}
+
+.box_palabras .box_palabras_search .input_search {
+  border: 1px solid #d1e7ff;
 }
 /*# sourceMappingURL=style.css.map */

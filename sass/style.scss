@@ -47,6 +47,49 @@ nav {
   }
 }
 
+.search {
+  display: flex;
+  position: relative;
+  justify-content: center;
+
+  .input_search {
+    width: 100%;
+    padding: 11px 18px;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 60px;
+
+    &:focus {
+      border-color: none !important;
+      outline-style: none !important;
+    }
+  }
+
+  .btnSearch {
+    position: absolute;
+    right: -1px;
+    width: 52px;
+    height: 52px;
+    border: none;
+    background-color: $orange;
+    border-radius: 100%;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      background-color: #ff876f;
+    }
+
+    i {
+      position: relative;
+      top: 2px;
+      color: #fff;
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+  }
+}
+
+
 header {
   padding: 60px 0 0;
   background-color: $background;
@@ -76,47 +119,8 @@ header {
   }
 
   .header_search {
-    display: flex;
-    position: relative;
-    justify-content: center;
     width: 60%;
-    margin: 0 auto;
-
-    .input_search {
-      width: 100%;
-      padding: 11px 18px;
-      border: none;
-      font-size: 1.2rem;
-      border-radius: 60px;
-
-      &:focus {
-        border-color: none !important;
-        outline-style: none !important;
-      }
-    }
-
-    .btnSearch {
-      position: absolute;
-      right: -1px;
-      width: 50px;
-      height: 50px;
-      border: none;
-      background-color: $orange;
-      border-radius: 100%;
-      transition: all 0.2s ease-in;
-
-      &:hover {
-        background-color: #ff876f;
-      }
-
-      i {
-        position: relative;
-        top: 2px;
-        color: #fff;
-        font-size: 1.6rem;
-        font-weight: 600;
-      }
-    }
+    @extend .search
   }
 
   .header_photos {
@@ -347,4 +351,18 @@ footer {
   margin-top: 180px;
   min-height: 400px;
   background-color: $blue_2;
+}
+
+.box_palabras {
+  min-height: 50vh;
+
+  .box_palabras_search {
+    width: 400px;
+    margin: 60px auto;
+    @extend .search;
+
+    .input_search {
+      border: 1px solid $blue_4;
+    }
+  }
 }
