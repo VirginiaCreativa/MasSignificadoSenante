@@ -36,6 +36,11 @@ header {
   background-color: #eff5ff;
 }
 
+header .header_textos {
+  margin: 60px 0 30px;
+  letter-spacing: -0.2px;
+}
+
 header .header_textos h6 {
   color: #070d59;
   font-size: 2.5rem;
@@ -46,19 +51,71 @@ header .header_textos h1 {
   color: #2e58ff;
   font-size: 3.5rem;
   font-weight: 600;
+  line-height: 2.8rem;
 }
 
 header .header_textos p {
-  color: #333;
-  font-size: 1.6rem;
+  color: #a1a1a1;
+  font-size: 1.4rem;
   font-weight: 400;
 }
 
+header .header_search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
 header .header_search .input_search {
-  width: 50%;
-  padding: 15px;
+  width: 100%;
+  padding: 11px 18px;
   border: none;
   border-radius: 60px;
+  font-size: 1.2rem;
+}
+
+header .header_search .input_search:focus {
+  border-color: none !important;
+  outline-style: none !important;
+}
+
+header .header_search .btnSearch {
+  position: absolute;
+  right: -1px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: #ee6f57;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+header .header_search .btnSearch:hover {
+  background-color: #ff876f;
+}
+
+header .header_search .btnSearch i {
+  position: relative;
+  top: 2px;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+header .header_photos .header_photos_woman {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 header .header_photos .header_photos_woman img {
