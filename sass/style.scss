@@ -7,7 +7,6 @@ $blue_4: #d1e7ff;
 $white: #ffffff;
 $orange: #ee6f57;
 $background: #eff5ff;
-/* Fondo */
 
 body {
   font-family: 'Barlow', serif !important;
@@ -18,8 +17,8 @@ body {
 }
 
 a {
-  text-decoration: none;
   color: $orange;
+  text-decoration: none;
 }
 
 nav {
@@ -38,6 +37,7 @@ nav {
         color: $blue_2;
         font-size: 1.2rem;
         font-weight: 500;
+
         &:hover {
           color: $blue_1 !important;
         }
@@ -49,23 +49,27 @@ nav {
 header {
   padding: 60px 0 0;
   background-color: $background;
+
   .header_textos {
     h6 {
       color: $blue_2;
       font-size: 2.5rem;
       font-weight: 600;
     }
+
     h1 {
       color: $blue_1;
       font-size: 3.5rem;
       font-weight: 600;
     }
+
     p {
       color: #333;
       font-size: 1.6rem;
       font-weight: 400;
     }
   }
+
   .header_search {
     .input_search {
       width: 50%;
@@ -74,6 +78,7 @@ header {
       border-radius: 60px;
     }
   }
+
   .header_photos {
     .header_photos_woman {
       img {
@@ -85,15 +90,18 @@ header {
 
 .box_main {
   margin: 80px 0;
+
   .box_main_title {
     display: flex;
     justify-content: center;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
+
     h1 {
       position: relative;
       color: $orange;
       font-size: 2rem;
       font-weight: 600;
+
       &:after {
         content: '';
         display: block;
@@ -108,42 +116,74 @@ header {
       }
     }
   }
+
   .box_main_items {
     .box_main_item {
       padding: 30px;
       margin: 0 30px;
-      box-shadow:  0 0 40px rgba($color: #2e58ff, $alpha: 0.15);
+      box-shadow: 0px 30px 40px 0px rgba($color: $blue_1, $alpha: 0.1);
       background-color: #fff;
       border-radius: 20px;
+      transition: all 0.3s ease-out;
+      cursor: pointer;
+      &:hover  {
+        transform: scale(1.1);
+        .link {
+          
+           .bx-right-arrow-alt {
+            visibility: visible;
+            opacity: 1;
+            left: 0;
+            width: 20px;
+          }
+        }
+      }
       .video {
         height: 230px;
         background-color: #ddd;
         margin-bottom: 20px;
       }
-    }
-    .box_main_item_meta {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      .title {
-        h2 {
-          color: $blue_2;
-          text-transform: capitalize;
+      a.link {
+        position: relative;
+        transition: all 0.3s ease-out;
+        .bx-right-arrow-alt {
+          visibility: hidden;
+          position: relative;
+          opacity: 0;
+          left: -20px;
+          width: 0;
+          top: 2.5px;
         }
       }
-      .clicks {
-        ul {
-          display: flex;
-          margin-bottom: 0;
-          li {
-            button {
-              border: none;
-              background-color: transparent;
-              color: $blue_3;
-              font-size: 1.5rem;
+
+      .box_main_item_meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+  
+        .title {
+          h2 {
+            color: $blue_2;
+            text-transform: capitalize;
+          }
+        }
+  
+        .clicks {
+          ul {
+            display: flex;
+            margin-bottom: 0;
+  
+            li {
+              button {
+                border: none;
+                color: $blue_3;
+                font-size: 1.5rem;
+                background-color: transparent;
+              }
             }
           }
         }
+  
       }
 
     }

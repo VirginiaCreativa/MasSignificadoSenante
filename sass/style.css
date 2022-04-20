@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-/* Fondo */
 body {
   font-family: 'Barlow', serif !important;
 }
@@ -9,8 +8,8 @@ body {
 }
 
 a {
-  text-decoration: none;
   color: #ee6f57;
+  text-decoration: none;
 }
 
 nav {
@@ -77,7 +76,7 @@ header .header_photos .header_photos_woman img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 
 .box_main .box_main_title h1 {
@@ -103,10 +102,25 @@ header .header_photos .header_photos_woman img {
 .box_main .box_main_items .box_main_item {
   padding: 30px;
   margin: 0 30px;
-  -webkit-box-shadow: 0 0 40px rgba(46, 88, 255, 0.15);
-          box-shadow: 0 0 40px rgba(46, 88, 255, 0.15);
+  -webkit-box-shadow: 0px 30px 40px 0px rgba(46, 88, 255, 0.1);
+          box-shadow: 0px 30px 40px 0px rgba(46, 88, 255, 0.1);
   background-color: #fff;
   border-radius: 20px;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+
+.box_main .box_main_items .box_main_item:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.box_main .box_main_items .box_main_item:hover .link .bx-right-arrow-alt {
+  visibility: visible;
+  opacity: 1;
+  left: 0;
+  width: 20px;
 }
 
 .box_main .box_main_items .box_main_item .video {
@@ -115,7 +129,22 @@ header .header_photos .header_photos_woman img {
   margin-bottom: 20px;
 }
 
-.box_main .box_main_items .box_main_item_meta {
+.box_main .box_main_items .box_main_item a.link {
+  position: relative;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.box_main .box_main_items .box_main_item a.link .bx-right-arrow-alt {
+  visibility: hidden;
+  position: relative;
+  opacity: 0;
+  left: -20px;
+  width: 0;
+  top: 2.5px;
+}
+
+.box_main .box_main_items .box_main_item .box_main_item_meta {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -127,22 +156,22 @@ header .header_photos .header_photos_woman img {
           align-items: center;
 }
 
-.box_main .box_main_items .box_main_item_meta .title h2 {
+.box_main .box_main_items .box_main_item .box_main_item_meta .title h2 {
   color: #070d59;
   text-transform: capitalize;
 }
 
-.box_main .box_main_items .box_main_item_meta .clicks ul {
+.box_main .box_main_items .box_main_item .box_main_item_meta .clicks ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 0;
 }
 
-.box_main .box_main_items .box_main_item_meta .clicks ul li button {
+.box_main .box_main_items .box_main_item .box_main_item_meta .clicks ul li button {
   border: none;
-  background-color: transparent;
   color: #b9dcff;
   font-size: 1.5rem;
+  background-color: transparent;
 }
 /*# sourceMappingURL=style.css.map */
