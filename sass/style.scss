@@ -495,8 +495,8 @@ footer {
         }
 
         p {
-          font-style: italic;
           color: #9a9a9a;
+          font-style: italic;
         }
       }
     }
@@ -548,6 +548,79 @@ footer {
       .bx {
         opacity: 0.5;
         font-size: 6rem;
+      }
+    }
+  }
+}
+
+.box_equipo {
+  margin: 120px 0;
+
+  .box_equipo_companer {
+    margin-bottom: 120px;
+
+    .box_equipo_companer_img {
+      position: relative;
+
+      .img_perfil {
+        overflow: hidden;
+        width: 300px;
+        border-radius: 100%;
+
+        img {
+          position: relative;
+          left: -20%;
+        }
+      }
+
+      .circle {
+        background-color: $background;
+        height: 220px;
+        width: 220px;
+        display: block;
+        position: absolute;
+        z-index: -1;
+        border-radius: 100%;
+      }
+
+      .circle_1 {
+        @extend .circle;
+        top: -60px;
+        right: -150px;
+      }
+
+      .circle_2 {
+        @extend .circle;
+        top: -60px;
+        right: 150px;
+      }
+    }
+
+    .box_equipo_companer_info {
+      h4 {
+        color: $blue_2;
+        font-weight: 700;
+      }
+
+      h5 {
+        color: #a5a5a5;
+        font-weight: 400;
+      }
+
+      p {
+        line-height: 2.2rem;
+      }
+
+      .redes {
+        .bx {
+          margin-right: 16px;
+          color: $blue_1;
+          font-size: 2rem;
+
+          &:hover {
+            color: $blue_2;
+          }
+        }
       }
     }
   }
