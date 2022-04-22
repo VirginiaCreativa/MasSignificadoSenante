@@ -78,6 +78,28 @@ nav .nav li a:hover, nav .nav li a.active {
   font-weight: 600;
 }
 
+.clicks ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0;
+}
+
+.clicks ul li button {
+  border: none;
+  color: #b9dcff;
+  font-size: 1.5rem;
+  background-color: transparent;
+}
+
+.clicks ul li button:hover {
+  color: #2e58ff;
+}
+
+.clicks ul li button:active {
+  color: #2e58ff;
+}
+
 .box_selection {
   padding: 30px;
   margin: 0 30px;
@@ -138,28 +160,6 @@ nav .nav li a:hover, nav .nav li a.active {
 .box_selection .box_selection_meta .title h2 {
   color: #070d59;
   text-transform: capitalize;
-}
-
-.box_selection .box_selection_meta .clicks ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 0;
-}
-
-.box_selection .box_selection_meta .clicks ul li button {
-  border: none;
-  color: #b9dcff;
-  font-size: 1.5rem;
-  background-color: transparent;
-}
-
-.box_selection .box_selection_meta .clicks ul li button:hover {
-  color: #2e58ff;
-}
-
-.box_selection .box_selection_meta .clicks ul li button:active {
-  color: #2e58ff;
 }
 
 header {
@@ -441,5 +441,49 @@ footer {
 
 .box_palabras .box_palabras_selections .col-4 {
   margin-bottom: 60px;
+}
+
+.box_palabra_detalle {
+  width: 100%;
+}
+
+.box_palabra_detalle .box_palabra_detalle_titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+  margin: 60px auto;
+}
+
+.box_palabra_detalle .box_palabra_detalle_titles .sintaxis,
+.box_palabra_detalle .box_palabra_detalle_titles .title,
+.box_palabra_detalle .box_palabra_detalle_titles .clicks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.box_palabra_detalle .box_palabra_detalle_titles .sintaxis p {
+  background-color: #d1e7ff;
+  color: #2e58ff;
+  font-weight: 600;
+  padding: 4px 20px;
+  border-radius: 100px;
+}
+
+.box_palabra_detalle .box_palabra_detalle_titles .title h1 {
+  color: #070d59;
+  font-weight: 800;
 }
 /*# sourceMappingURL=style.css.map */

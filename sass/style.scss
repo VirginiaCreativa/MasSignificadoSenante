@@ -89,6 +89,30 @@ nav {
   }
 }
 
+.clicks {
+  ul {
+    display: flex;
+    margin-bottom: 0;
+
+    li {
+      button {
+        border: none;
+        color: $blue_3;
+        font-size: 1.5rem;
+        background-color: transparent;
+
+        &:hover {
+          color: $blue_1;
+        }
+
+        &:active {
+          color: $blue_1;
+        }
+      }
+    }
+  }
+}
+
 .box_selection {
   padding: 30px;
   margin: 0 30px;
@@ -142,31 +166,6 @@ nav {
         text-transform: capitalize;
       }
     }
-
-    .clicks {
-      ul {
-        display: flex;
-        margin-bottom: 0;
-
-        li {
-          button {
-            border: none;
-            color: $blue_3;
-            font-size: 1.5rem;
-            background-color: transparent;
-
-            &:hover {
-              color: $blue_1;
-            }
-
-            &:active {
-              color: $blue_1;
-            }
-          }
-        }
-      }
-    }
-
   }
 
 }
@@ -389,6 +388,43 @@ footer {
   .box_palabras_selections {
     .col-4 {
       margin-bottom: 60px;
+    }
+  }
+}
+
+.box_palabra_detalle {
+  width: 100%;
+
+  .box_palabra_detalle_titles {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    width: 30%;
+    margin: 60px auto;
+
+    .sintaxis,
+    .title,
+    .clicks {
+      display: flex;
+      justify-content: center;
+    }
+
+    .sintaxis {
+      p {
+        background-color: $blue_4;
+        color: $blue_1;
+        font-weight: 600;
+        padding: 4px 20px;
+        border-radius: 100px;
+      }
+    }
+
+    .title {
+      h1 {
+        color: $blue_2;
+        font-weight: 800;
+      }
     }
   }
 }
