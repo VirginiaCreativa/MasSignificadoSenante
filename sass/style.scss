@@ -377,8 +377,8 @@ footer {
 
           &:hover,
           &.active {
-            font-weight: 600;
             color: $blue_1;
+            font-weight: 600;
           }
         }
       }
@@ -397,11 +397,11 @@ footer {
 
   .box_palabra_detalle_titles {
     display: flex;
-    justify-content: center;
-    justify-items: center;
     flex-direction: column;
+    justify-content: center;
     width: 30%;
     margin: 60px auto;
+    justify-items: center;
 
     .sintaxis,
     .title,
@@ -412,10 +412,10 @@ footer {
 
     .sintaxis {
       p {
-        background-color: $blue_4;
+        padding: 4px 20px;
         color: $blue_1;
         font-weight: 600;
-        padding: 4px 20px;
+        background-color: $blue_4;
         border-radius: 100px;
       }
     }
@@ -424,6 +424,130 @@ footer {
       h1 {
         color: $blue_2;
         font-weight: 800;
+      }
+    }
+  }
+
+  .box_palabra_detalle_definition {
+    margin-bottom: 60px;
+
+    .title {
+      position: relative;
+
+      h3 {
+        display: inline-block;
+        color: $blue_2;
+        font-weight: 600;
+        padding-bottom: 20px;
+        background-color: #fff;
+        padding-right: 20px;
+
+        &::after {
+          content: '';
+          display: block;
+          position: absolute;
+          z-index: -1;
+          top: 20px;
+          right: 0;
+          width: 100%;
+          border: 1px dashed #e9e9e9;
+        }
+      }
+
+    }
+  }
+
+  .note {
+    ul {
+      li {
+        position: relative;
+        list-style-position: inside;
+        margin-left: 20px;
+
+        span {
+          position: absolute;
+          top: -2px;
+          left: -20px;
+          color: $blue_2;
+          font-size: 1.6rem;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .ejemplo {
+    ul {
+      li {
+        position: relative;
+        margin-left: 20px;
+
+        &::before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 8px;
+          left: -20px;
+          width: 8px;
+          height: 8px;
+          border-radius: 100px;
+          background-color: $blue_3;
+        }
+
+        p {
+          font-style: italic;
+          color: #9a9a9a;
+        }
+      }
+    }
+  }
+
+  .list-simila {
+    ul {
+      display: flex;
+      gap: 20px;
+
+      li {
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  .sinonimos {
+    ul {
+      li {
+        padding: 2px 18px;
+        color: #28C76F;
+        font-weight: 500;
+        background-color: #E5F8ED;
+        border-radius: 100px;
+      }
+    }
+  }
+
+  .antonimos {
+    ul {
+      li {
+        padding: 2px 18px;
+        color: #EA5455;
+        font-weight: 500;
+        background-color: #FDEAEA;
+        border-radius: 100px;
+      }
+    }
+  }
+
+  .video {
+    .lorem_video {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 260px;
+      background-color: #ddd;
+
+      .bx {
+        opacity: 0.5;
+        font-size: 6rem;
       }
     }
   }
