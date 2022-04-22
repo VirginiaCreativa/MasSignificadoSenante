@@ -7,14 +7,13 @@ $blue_4: #d1e7ff;
 $white: #ffffff;
 $orange: #ee6f57;
 $background: #eff5ff;
-$input-btn-focus-box-shadow: none;
 
 body {
   font-family: 'Barlow', serif !important;
 }
 
 .active {
-  color: $blue_1 !important;
+  color: $blue_1;
 }
 
 a {
@@ -39,7 +38,8 @@ nav {
         font-size: 1.2rem;
         font-weight: 500;
 
-        &:hover {
+        &:hover,
+        &.active {
           color: $blue_1 !important;
         }
       }
@@ -89,6 +89,87 @@ nav {
   }
 }
 
+.box_selection {
+  padding: 30px;
+  margin: 0 30px;
+  box-shadow: 0px 30px 40px 0px rgba($color: $blue_1, $alpha: 0.1);
+  background-color: #fff;
+  border-radius: 20px;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+
+    .link {
+      .bx-right-arrow-alt {
+        left: 0;
+        opacity: 1;
+        width: 20px;
+        visibility: visible;
+      }
+    }
+  }
+
+  .video {
+    height: 230px;
+    background-color: #ddd;
+    margin-bottom: 20px;
+  }
+
+  a.link {
+    position: relative;
+    transition: all 0.3s ease-out;
+
+    .bx-right-arrow-alt {
+      position: relative;
+      top: 2.5px;
+      left: -20px;
+      opacity: 0;
+      width: 0;
+      visibility: hidden;
+    }
+  }
+
+  .box_selection_meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .title {
+      h2 {
+        color: $blue_2;
+        text-transform: capitalize;
+      }
+    }
+
+    .clicks {
+      ul {
+        display: flex;
+        margin-bottom: 0;
+
+        li {
+          button {
+            border: none;
+            color: $blue_3;
+            font-size: 1.5rem;
+            background-color: transparent;
+
+            &:hover {
+              color: $blue_1;
+            }
+
+            &:active {
+              color: $blue_1;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+}
 
 header {
   padding: 60px 0 0;
@@ -120,7 +201,7 @@ header {
 
   .header_search {
     width: 60%;
-    @extend .search
+    @extend .search;
   }
 
   .header_photos {
@@ -132,16 +213,16 @@ header {
       justify-content: center;
 
       img {
-        height: 460px;
         z-index: 6;
+        height: 460px;
       }
     }
 
     .header_photos_woman_circles {
-      position: absolute;
-      left: 300px;
-      bottom: 218px;
       display: flex;
+      position: absolute;
+      bottom: 218px;
+      left: 300px;
       justify-content: center;
       align-items: center;
       transition: all 0.4s ease-in-out;
@@ -158,10 +239,10 @@ header {
       }
 
       .circle_1 {
+        z-index: 3;
         width: 300px;
         height: 300px;
         background-color: $blue_1;
-        z-index: 3;
         animation-name: moveCircleIn_1;
         @extend .moveCirce;
         @extend .circle;
@@ -183,13 +264,13 @@ header {
 
 
       .circle_2 {
+        z-index: 2;
         width: 360px;
         height: 360px;
         background-color: $blue_3;
-        z-index: 2;
+        animation-name: moveCircleIn_2;
         @extend .circle;
         @extend .moveCirce;
-        animation-name: moveCircleIn_2;
 
         @keyframes moveCircleIn_2 {
           from {
@@ -207,13 +288,13 @@ header {
       }
 
       .circle_3 {
+        z-index: 1;
         width: 420px;
         height: 420px;
         background-color: $blue_4;
-        z-index: 1;
+        animation-name: moveCircleIn_3;
         @extend .circle;
         @extend .moveCirce;
-        animation-name: moveCircleIn_3;
 
         @keyframes moveCircleIn_3 {
           from {
@@ -239,7 +320,7 @@ header {
   .box_main_title {
     display: flex;
     justify-content: center;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 
     h1 {
       position: relative;
@@ -261,90 +342,6 @@ header {
       }
     }
   }
-
-  .box_main_items {
-    .box_main_item {
-      padding: 30px;
-      margin: 0 30px;
-      box-shadow: 0px 30px 40px 0px rgba($color: $blue_1, $alpha: 0.1);
-      background-color: #fff;
-      border-radius: 20px;
-      transition: all 0.3s ease-out;
-      cursor: pointer;
-
-      &:hover {
-        transform: scale(1.1);
-
-        .link {
-          .bx-right-arrow-alt {
-            left: 0;
-            opacity: 1;
-            width: 20px;
-            visibility: visible;
-          }
-        }
-      }
-
-      .video {
-        height: 230px;
-        background-color: #ddd;
-        margin-bottom: 20px;
-      }
-
-      a.link {
-        position: relative;
-        transition: all 0.3s ease-out;
-
-        .bx-right-arrow-alt {
-          position: relative;
-          top: 2.5px;
-          left: -20px;
-          opacity: 0;
-          width: 0;
-          visibility: hidden;
-        }
-      }
-
-      .box_main_item_meta {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        .title {
-          h2 {
-            color: $blue_2;
-            text-transform: capitalize;
-          }
-        }
-
-        .clicks {
-          ul {
-            display: flex;
-            margin-bottom: 0;
-
-            li {
-              button {
-                border: none;
-                color: $blue_3;
-                font-size: 1.5rem;
-                background-color: transparent;
-
-                &:hover {
-                  color: $blue_1;
-                }
-
-                &:active {
-                  color: $blue_1;
-                }
-              }
-            }
-          }
-        }
-
-      }
-
-    }
-  }
 }
 
 footer {
@@ -363,6 +360,35 @@ footer {
 
     .input_search {
       border: 1px solid $blue_4;
+    }
+  }
+
+  .box_palabras_alpha {
+    margin-bottom: 40px;
+
+    ul {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+
+      li {
+        a {
+          color: rgb(199, 199, 199);
+          font-size: 1.2rem;
+
+          &:hover,
+          &.active {
+            font-weight: 600;
+            color: $blue_1;
+          }
+        }
+      }
+    }
+  }
+
+  .box_palabras_selections {
+    .col-4 {
+      margin-bottom: 60px;
     }
   }
 }
