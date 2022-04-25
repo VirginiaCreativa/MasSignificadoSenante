@@ -10,10 +10,7 @@ $background: #eff5ff;
 
 body {
   font-family: 'Barlow', serif !important;
-}
-
-p {
-  font-size: 0.8rem !important;
+  font-size: 0.9rem !important;
 }
 
 .active {
@@ -31,7 +28,7 @@ nav {
 
   .logo {
     img {
-      max-height: 40px;
+      max-height: 36px;
     }
   }
 
@@ -39,7 +36,7 @@ nav {
     li {
       a {
         color: $blue_2;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         font-weight: 500;
 
         &:hover,
@@ -78,6 +75,7 @@ nav {
     background-color: $orange;
     border-radius: 100%;
     transition: all 0.2s ease-in;
+    font-size: 0.9rem;
 
     &:hover {
       background-color: #ff876f;
@@ -184,20 +182,20 @@ header {
 
     h6 {
       color: $blue_2;
-      font-size: 2.5rem;
+      font-size: 2.2rem;
       font-weight: 600;
     }
 
     h1 {
       color: $blue_1;
-      font-size: 3.5rem;
+      font-size: 3.2rem;
       font-weight: 600;
       line-height: 2.8rem;
     }
 
     p {
       color: #a1a1a1;
-      font-size: 1.4rem;
+      font-size: 1.4rem !important;
       font-weight: 400;
     }
   }
