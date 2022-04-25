@@ -343,12 +343,6 @@ header {
   }
 }
 
-footer {
-  margin-top: 180px;
-  min-height: 400px;
-  background-color: $blue_2;
-}
-
 .box_palabras {
   min-height: 50vh;
 
@@ -574,25 +568,25 @@ footer {
       }
 
       .circle {
-        background-color: $background;
-        height: 220px;
-        width: 220px;
         display: block;
         position: absolute;
         z-index: -1;
+        width: 220px;
+        height: 220px;
+        background-color: $background;
         border-radius: 100%;
       }
 
       .circle_1 {
-        @extend .circle;
         top: -60px;
         right: -150px;
+        @extend .circle;
       }
 
       .circle_2 {
-        @extend .circle;
         top: -60px;
         right: 150px;
+        @extend .circle;
       }
     }
 
@@ -613,15 +607,127 @@ footer {
 
       .redes {
         .bx {
-          margin-right: 16px;
           color: $blue_1;
           font-size: 2rem;
+          margin-right: 16px;
 
           &:hover {
             color: $blue_2;
           }
         }
       }
+    }
+  }
+}
+
+footer {
+  padding: 40px 0;
+  color: #fff;
+  margin-top: 180px;
+  min-height: 400px;
+  background-color: $blue_2;
+
+
+  .box_footer_info {
+
+    .box_footer_info_logo {
+      display: flex;
+      justify-content: center;
+      margin: 80px 0;
+
+      img {
+        height: 60px;
+      }
+    }
+
+    .box_footer_info_menus {
+      margin-bottom: 60px;
+
+      ul {
+        display: flex;
+        gap: 40px;
+
+        li {
+          &::after {
+            content: '|';
+            position: relative;
+            right: -22px;
+            color: #fff;
+
+          }
+
+          &:last-child {
+            &::after {
+              display: none;
+            }
+          }
+
+          a {
+            color: #fff;
+            font-size: 1.2rem;
+
+            &:hover {
+              color: $blue_1;
+            }
+
+          }
+        }
+      }
+    }
+
+    .box_footer_info_redes {
+      margin-bottom: 60px;
+
+      ul {
+        gap: 40px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+
+        li {
+          a {
+            .circle {
+              display: block;
+              width: 60px;
+              height: 60px;
+              background-color: #fff;
+              border-radius: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              .bx {
+                color: $blue_1;
+                font-size: 2rem;
+
+                &:hover {
+                  color: #fff;
+                }
+              }
+
+              &:hover {
+                background-color: $orange;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  .box_footer_linea {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    opacity: 0.2;
+    margin-bottom: 20px;
+  }
+
+  .box_footer_copy {
+    p {
+      text-align: center;
     }
   }
 }

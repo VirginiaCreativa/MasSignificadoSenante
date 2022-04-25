@@ -396,12 +396,6 @@ header .header_photos .header_photos_woman_circles .circle_3 {
   border-radius: 20px;
 }
 
-footer {
-  margin-top: 180px;
-  min-height: 400px;
-  background-color: #070d59;
-}
-
 .box_palabras {
   min-height: 50vh;
 }
@@ -622,12 +616,12 @@ footer {
 }
 
 .box_equipo .box_equipo_companer .box_equipo_companer_img .circle, .box_equipo .box_equipo_companer .box_equipo_companer_img header .header_photos .header_photos_woman_circles .circle_3, header .header_photos .header_photos_woman_circles .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_3, .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_1, .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_2 {
-  background-color: #eff5ff;
-  height: 220px;
-  width: 220px;
   display: block;
   position: absolute;
   z-index: -1;
+  width: 220px;
+  height: 220px;
+  background-color: #eff5ff;
   border-radius: 100%;
 }
 
@@ -656,12 +650,126 @@ footer {
 }
 
 .box_equipo .box_equipo_companer .box_equipo_companer_info .redes .bx {
-  margin-right: 16px;
   color: #2e58ff;
   font-size: 2rem;
+  margin-right: 16px;
 }
 
 .box_equipo .box_equipo_companer .box_equipo_companer_info .redes .bx:hover {
   color: #070d59;
+}
+
+footer {
+  padding: 40px 0;
+  color: #fff;
+  margin-top: 180px;
+  min-height: 400px;
+  background-color: #070d59;
+}
+
+footer .box_footer_info .box_footer_info_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 80px 0;
+}
+
+footer .box_footer_info .box_footer_info_logo img {
+  height: 60px;
+}
+
+footer .box_footer_info .box_footer_info_menus {
+  margin-bottom: 60px;
+}
+
+footer .box_footer_info .box_footer_info_menus ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+
+footer .box_footer_info .box_footer_info_menus ul li::after {
+  content: '|';
+  position: relative;
+  right: -22px;
+  color: #fff;
+}
+
+footer .box_footer_info .box_footer_info_menus ul li:last-child::after {
+  display: none;
+}
+
+footer .box_footer_info .box_footer_info_menus ul li a {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+footer .box_footer_info .box_footer_info_menus ul li a:hover {
+  color: #2e58ff;
+}
+
+footer .box_footer_info .box_footer_info_redes {
+  margin-bottom: 60px;
+}
+
+footer .box_footer_info .box_footer_info_redes ul {
+  gap: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer .box_footer_info .box_footer_info_redes ul li a .circle, footer .box_footer_info .box_footer_info_redes ul li a header .header_photos .header_photos_woman_circles .circle_1, header .header_photos .header_photos_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_1, footer .box_footer_info .box_footer_info_redes ul li a header .header_photos .header_photos_woman_circles .circle_2, header .header_photos .header_photos_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_2, footer .box_footer_info .box_footer_info_redes ul li a header .header_photos .header_photos_woman_circles .circle_3, header .header_photos .header_photos_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_3, footer .box_footer_info .box_footer_info_redes ul li a .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_1, .box_equipo .box_equipo_companer .box_equipo_companer_img footer .box_footer_info .box_footer_info_redes ul li a .circle_1, footer .box_footer_info .box_footer_info_redes ul li a .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_2, .box_equipo .box_equipo_companer .box_equipo_companer_img footer .box_footer_info .box_footer_info_redes ul li a .circle_2 {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .box_footer_info .box_footer_info_redes ul li a .circle .bx, footer .box_footer_info .box_footer_info_redes ul li a header .header_photos .header_photos_woman_circles .circle_1 .bx, header .header_photos .header_photos_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_1 .bx, footer .box_footer_info .box_footer_info_redes ul li a header .header_photos .header_photos_woman_circles .circle_2 .bx, header .header_photos .header_photos_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_2 .bx, footer .box_footer_info .box_footer_info_redes ul li a header .header_photos .header_photos_woman_circles .circle_3 .bx, header .header_photos .header_photos_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_3 .bx, footer .box_footer_info .box_footer_info_redes ul li a .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_1 .bx, .box_equipo .box_equipo_companer .box_equipo_companer_img footer .box_footer_info .box_footer_info_redes ul li a .circle_1 .bx, footer .box_footer_info .box_footer_info_redes ul li a .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_2 .bx, .box_equipo .box_equipo_companer .box_equipo_companer_img footer .box_footer_info .box_footer_info_redes ul li a .circle_2 .bx {
+  color: #2e58ff;
+  font-size: 2rem;
+}
+
+footer .box_footer_info .box_footer_info_redes ul li a .circle .bx:hover, footer .box_footer_info .box_footer_info_redes ul li a header .header_photos .header_photos_woman_circles .circle_1 .bx:hover, header .header_photos .header_photos_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_1 .bx:hover, footer .box_footer_info .box_footer_info_redes ul li a header .header_photos .header_photos_woman_circles .circle_2 .bx:hover, header .header_photos .header_photos_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_2 .bx:hover, footer .box_footer_info .box_footer_info_redes ul li a header .header_photos .header_photos_woman_circles .circle_3 .bx:hover, header .header_photos .header_photos_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_3 .bx:hover, footer .box_footer_info .box_footer_info_redes ul li a .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_1 .bx:hover, .box_equipo .box_equipo_companer .box_equipo_companer_img footer .box_footer_info .box_footer_info_redes ul li a .circle_1 .bx:hover, footer .box_footer_info .box_footer_info_redes ul li a .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_2 .bx:hover, .box_equipo .box_equipo_companer .box_equipo_companer_img footer .box_footer_info .box_footer_info_redes ul li a .circle_2 .bx:hover {
+  color: #fff;
+}
+
+footer .box_footer_info .box_footer_info_redes ul li a .circle:hover, footer .box_footer_info .box_footer_info_redes ul li a header .header_photos .header_photos_woman_circles .circle_1:hover, header .header_photos .header_photos_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_1:hover, footer .box_footer_info .box_footer_info_redes ul li a header .header_photos .header_photos_woman_circles .circle_2:hover, header .header_photos .header_photos_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_2:hover, footer .box_footer_info .box_footer_info_redes ul li a header .header_photos .header_photos_woman_circles .circle_3:hover, header .header_photos .header_photos_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_3:hover, footer .box_footer_info .box_footer_info_redes ul li a .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_1:hover, .box_equipo .box_equipo_companer .box_equipo_companer_img footer .box_footer_info .box_footer_info_redes ul li a .circle_1:hover, footer .box_footer_info .box_footer_info_redes ul li a .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_2:hover, .box_equipo .box_equipo_companer .box_equipo_companer_img footer .box_footer_info .box_footer_info_redes ul li a .circle_2:hover {
+  background-color: #ee6f57;
+}
+
+footer .box_footer_linea {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  opacity: 0.2;
+  margin-bottom: 20px;
+}
+
+footer .box_footer_copy p {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
