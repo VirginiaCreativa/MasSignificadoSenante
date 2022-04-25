@@ -171,12 +171,12 @@ header {
 
 header .header_textos {
   margin: 60px 0 30px;
-  letter-spacing: -0.2px;
+  letter-spacing: -0.15px;
 }
 
 header .header_textos h6 {
   color: #070d59;
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 600;
 }
 
