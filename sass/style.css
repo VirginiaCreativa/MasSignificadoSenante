@@ -127,10 +127,15 @@ nav .nav li a:hover, nav .nav li a.active {
   visibility: visible;
 }
 
-.box_selection .video {
-  height: 230px;
-  background-color: #ddd;
-  margin-bottom: 20px;
+.box_selection .box_selection_video {
+  overflow: hidden;
+  max-height: 100%;
+  height: 240px;
+}
+
+.box_selection .box_selection_video video {
+  width: 100%;
+  height: 100%;
 }
 
 .box_selection a.link {
