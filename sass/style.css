@@ -14,15 +14,16 @@ a {
 }
 
 nav {
-  padding: 22px 0;
+  padding: 20px 0;
   background-color: #eff5ff;
 }
 
 nav .logo img {
-  max-height: 36px;
+  max-height: 32px;
 }
 
 nav .nav li a {
+  padding: 0 1rem;
   color: #070d59;
   font-size: 1.1rem;
   font-weight: 500;
@@ -44,9 +45,9 @@ nav .nav li a:hover, nav .nav li a.active {
 
 .search .input_search, header .header_search .input_search, .box_palabras .box_palabras_search .input_search {
   width: 100%;
-  padding: 11px 18px;
+  padding: 10px 16px;
   border: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
   border-radius: 60px;
 }
 
@@ -57,15 +58,15 @@ nav .nav li a:hover, nav .nav li a.active {
 
 .search .btnSearch, header .header_search .btnSearch, .box_palabras .box_palabras_search .btnSearch {
   position: absolute;
-  right: -1px;
-  width: 52px;
-  height: 52px;
+  right: 0;
+  width: 46px;
+  height: 46px;
   border: none;
+  font-size: 0.9rem;
   background-color: #ee6f57;
   border-radius: 100%;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
-  font-size: 0.9rem;
 }
 
 .search .btnSearch:hover, header .header_search .btnSearch:hover, .box_palabras .box_palabras_search .btnSearch:hover {
@@ -103,8 +104,8 @@ nav .nav li a:hover, nav .nav li a.active {
 }
 
 .box_selection {
-  padding: 30px;
-  margin: 0 30px;
+  padding: 20px;
+  margin: 0 20px;
   -webkit-box-shadow: 0px 30px 40px 0px rgba(46, 88, 255, 0.1);
           box-shadow: 0px 30px 40px 0px rgba(46, 88, 255, 0.1);
   background-color: #fff;
@@ -162,6 +163,7 @@ nav .nav li a:hover, nav .nav li a.active {
 .box_selection .box_selection_meta .title h2 {
   color: #070d59;
   text-transform: capitalize;
+  font-size: 1.8rem;
 }
 
 header {
@@ -182,9 +184,9 @@ header .header_textos h6 {
 
 header .header_textos h1 {
   color: #2e58ff;
-  font-size: 3.2rem;
+  font-size: 3rem;
   font-weight: 600;
-  line-height: 2.8rem;
+  line-height: 2.4rem;
 }
 
 header .header_textos p {
@@ -381,7 +383,7 @@ header .header_photos .header_photos_woman_circles .circle_3 {
 .box_main .box_main_title h1 {
   position: relative;
   color: #ee6f57;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
 }
 
@@ -427,7 +429,6 @@ header .header_photos .header_photos_woman_circles .circle_3 {
 
 .box_palabras .box_palabras_alpha ul li a {
   color: #c7c7c7;
-  font-size: 1.2rem;
 }
 
 .box_palabras .box_palabras_alpha ul li a:hover, .box_palabras .box_palabras_alpha ul li a.active {
@@ -719,34 +720,34 @@ footer .box_footer_info .box_footer_info_redes {
 }
 
 footer .box_footer_info .box_footer_info_redes ul {
-  gap: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 40px;
 }
 
 footer .box_footer_info .box_footer_info_redes ul li a .circle, footer .box_footer_info .box_footer_info_redes ul li a header .header_photos .header_photos_woman_circles .circle_1, header .header_photos .header_photos_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_1, footer .box_footer_info .box_footer_info_redes ul li a header .header_photos .header_photos_woman_circles .circle_2, header .header_photos .header_photos_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_2, footer .box_footer_info .box_footer_info_redes ul li a header .header_photos .header_photos_woman_circles .circle_3, header .header_photos .header_photos_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_3, footer .box_footer_info .box_footer_info_redes ul li a .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_1, .box_equipo .box_equipo_companer .box_equipo_companer_img footer .box_footer_info .box_footer_info_redes ul li a .circle_1, footer .box_footer_info .box_footer_info_redes ul li a .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_2, .box_equipo .box_equipo_companer .box_equipo_companer_img footer .box_footer_info .box_footer_info_redes ul li a .circle_2 {
   display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 60px;
   height: 60px;
   background-color: #fff;
   border-radius: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 footer .box_footer_info .box_footer_info_redes ul li a .circle .bx, footer .box_footer_info .box_footer_info_redes ul li a header .header_photos .header_photos_woman_circles .circle_1 .bx, header .header_photos .header_photos_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_1 .bx, footer .box_footer_info .box_footer_info_redes ul li a header .header_photos .header_photos_woman_circles .circle_2 .bx, header .header_photos .header_photos_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_2 .bx, footer .box_footer_info .box_footer_info_redes ul li a header .header_photos .header_photos_woman_circles .circle_3 .bx, header .header_photos .header_photos_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_3 .bx, footer .box_footer_info .box_footer_info_redes ul li a .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_1 .bx, .box_equipo .box_equipo_companer .box_equipo_companer_img footer .box_footer_info .box_footer_info_redes ul li a .circle_1 .bx, footer .box_footer_info .box_footer_info_redes ul li a .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_2 .bx, .box_equipo .box_equipo_companer .box_equipo_companer_img footer .box_footer_info .box_footer_info_redes ul li a .circle_2 .bx {
@@ -764,10 +765,10 @@ footer .box_footer_info .box_footer_info_redes ul li a .circle:hover, footer .bo
 
 footer .box_footer_linea {
   display: block;
-  height: 2px;
-  width: 100%;
-  background-color: #fff;
   opacity: 0.2;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
   margin-bottom: 20px;
 }
 
