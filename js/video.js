@@ -1,8 +1,13 @@
 let boxVideo = document.querySelector('.box_selection_video');
-let refVideo = document.querySelector('.control_video');
+let refVideo = document.getElementsByTagName('video');
 
-boxVideo.addEventListener('mouseover', (e) => refVideo.play());
-boxVideo.addEventListener('mouseout', (e) => {
-  refVideo.pause();
-  refVideo.currentTime = 0;
-});
+for (let i = 0; i < refVideo.length; i++) {
+  refVideo[i].addEventListener('mouseover', (e) => refVideo[i].play());
+}
+
+for (let i = 0; i < refVideo.length; i++) {
+  refVideo[i].addEventListener('mouseout', (e) => {
+    refVideo[i].pause();
+    refVideo[i].currentTime = 0;
+  });
+}
