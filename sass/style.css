@@ -162,8 +162,8 @@ nav .nav li a:hover, nav .nav li a.active {
 
 .box_selection .box_selection_meta .title h2 {
   color: #070d59;
-  text-transform: capitalize;
   font-size: 1.8rem;
+  text-transform: capitalize;
 }
 
 header {
@@ -235,12 +235,12 @@ header .header_photos .header_photos_woman_circles {
   transition: all 0.4s ease-in-out;
 }
 
-header .header_photos .header_photos_woman_circles .circle, header .header_photos .header_photos_woman_circles .circle_1, header .header_photos .header_photos_woman_circles .circle_2, header .header_photos .header_photos_woman_circles .circle_3, header .header_photos .header_photos_woman_circles .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_1, .box_equipo .box_equipo_companer .box_equipo_companer_img header .header_photos .header_photos_woman_circles .circle_1, header .header_photos .header_photos_woman_circles .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_2, .box_equipo .box_equipo_companer .box_equipo_companer_img header .header_photos .header_photos_woman_circles .circle_2 {
+header .header_photos .header_photos_woman_circles .circle, header .header_photos .header_photos_woman_circles .circle_1, header .header_photos .header_photos_woman_circles .circle_2, header .header_photos .header_photos_woman_circles .circle_3, header .header_photos .header_photos_woman_circles .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_1, .box_equipo .box_equipo_companer .box_equipo_companer_img header .header_photos .header_photos_woman_circles .circle_1, header .header_photos .header_photos_woman_circles .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_2, .box_equipo .box_equipo_companer .box_equipo_companer_img header .header_photos .header_photos_woman_circles .circle_2, header .header_photos .header_photos_woman_circles .box_contacto .box_contacto_woman .box_contacto_woman_circles .circle_1, .box_contacto .box_contacto_woman .box_contacto_woman_circles header .header_photos .header_photos_woman_circles .circle_1, header .header_photos .header_photos_woman_circles .box_contacto .box_contacto_woman .box_contacto_woman_circles .circle_2, .box_contacto .box_contacto_woman .box_contacto_woman_circles header .header_photos .header_photos_woman_circles .circle_2, header .header_photos .header_photos_woman_circles .box_contacto .box_contacto_woman .box_contacto_woman_circles .circle_3, .box_contacto .box_contacto_woman .box_contacto_woman_circles header .header_photos .header_photos_woman_circles .circle_3 {
   position: absolute;
   border-radius: 100%;
 }
 
-header .header_photos .header_photos_woman_circles .moveCirce, header .header_photos .header_photos_woman_circles .circle_1, header .header_photos .header_photos_woman_circles .circle_2, header .header_photos .header_photos_woman_circles .circle_3 {
+header .header_photos .header_photos_woman_circles .moveCirce, header .header_photos .header_photos_woman_circles .circle_1, header .header_photos .header_photos_woman_circles .circle_2, header .header_photos .header_photos_woman_circles .circle_3, header .header_photos .header_photos_woman_circles .box_contacto .box_contacto_woman .box_contacto_woman_circles .circle_1, .box_contacto .box_contacto_woman .box_contacto_woman_circles header .header_photos .header_photos_woman_circles .circle_1, header .header_photos .header_photos_woman_circles .box_contacto .box_contacto_woman .box_contacto_woman_circles .circle_2, .box_contacto .box_contacto_woman .box_contacto_woman_circles header .header_photos .header_photos_woman_circles .circle_2, header .header_photos .header_photos_woman_circles .box_contacto .box_contacto_woman .box_contacto_woman_circles .circle_3, .box_contacto .box_contacto_woman .box_contacto_woman_circles header .header_photos .header_photos_woman_circles .circle_3 {
   -webkit-animation-duration: 10s;
           animation-duration: 10s;
   -webkit-animation-timing-function: ease-in-out;
@@ -618,7 +618,7 @@ header .header_photos .header_photos_woman_circles .circle_3 {
   left: -20%;
 }
 
-.box_equipo .box_equipo_companer .box_equipo_companer_img .circle, .box_equipo .box_equipo_companer .box_equipo_companer_img header .header_photos .header_photos_woman_circles .circle_3, header .header_photos .header_photos_woman_circles .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_3, .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_1, .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_2 {
+.box_equipo .box_equipo_companer .box_equipo_companer_img .circle, .box_equipo .box_equipo_companer .box_equipo_companer_img header .header_photos .header_photos_woman_circles .circle_3, header .header_photos .header_photos_woman_circles .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_3, .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_1, .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_2, .box_equipo .box_equipo_companer .box_equipo_companer_img .box_contacto .box_contacto_woman .box_contacto_woman_circles .circle_3, .box_contacto .box_contacto_woman .box_contacto_woman_circles .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_3 {
   display: block;
   position: absolute;
   z-index: -1;
@@ -662,6 +662,170 @@ header .header_photos .header_photos_woman_circles .circle_3 {
   color: #070d59;
 }
 
+.box_contacto {
+  margin: 80px 0;
+}
+
+.box_contacto .box_contacto_woman {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.box_contacto .box_contacto_woman img {
+  position: relative;
+  z-index: 6;
+  height: 360px;
+}
+
+.box_contacto .box_contacto_woman .box_contacto_woman_circles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 218px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.box_contacto .box_contacto_woman .box_contacto_woman_circles .circle, .box_contacto .box_contacto_woman .box_contacto_woman_circles .circle_1, .box_contacto .box_contacto_woman .box_contacto_woman_circles .circle_2, .box_contacto .box_contacto_woman .box_contacto_woman_circles .circle_3 {
+  position: absolute;
+  border-radius: 100%;
+}
+
+.box_contacto .box_contacto_woman .box_contacto_woman_circles .moveCirce, .box_contacto .box_contacto_woman .box_contacto_woman_circles .circle_1, .box_contacto .box_contacto_woman .box_contacto_woman_circles .circle_2, .box_contacto .box_contacto_woman .box_contacto_woman_circles .circle_3 {
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.box_contacto .box_contacto_woman .box_contacto_woman_circles .circle_1 {
+  z-index: 3;
+  width: 160px;
+  height: 160px;
+  background-color: #2e58ff;
+  -webkit-animation-name: moveCircleIn_1;
+          animation-name: moveCircleIn_1;
+}
+
+@keyframes moveCircleIn_1 {
+  from {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(10px, 20px);
+            transform: translate(10px, 20px);
+  }
+  to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+.box_contacto .box_contacto_woman .box_contacto_woman_circles .circle_2 {
+  z-index: 2;
+  width: 200px;
+  height: 200px;
+  background-color: #b9dcff;
+  -webkit-animation-name: moveCircleIn_2;
+          animation-name: moveCircleIn_2;
+}
+
+@keyframes moveCircleIn_2 {
+  from {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(-10px, -20px);
+            transform: translate(-10px, -20px);
+  }
+  to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+.box_contacto .box_contacto_woman .box_contacto_woman_circles .circle_3 {
+  z-index: 1;
+  width: 240px;
+  height: 240px;
+  background-color: #d1e7ff;
+  -webkit-animation-name: moveCircleIn_3;
+          animation-name: moveCircleIn_3;
+}
+
+@keyframes moveCircleIn_3 {
+  from {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(20px, 10px);
+            transform: translate(20px, 10px);
+  }
+  to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+.box_contacto .box_contacto_title {
+  margin-bottom: 20px;
+}
+
+.box_contacto .box_contacto_title h2 {
+  color: #070d59;
+}
+
+.box_contacto .box_contacto_title h6 {
+  color: #a1a1a1;
+}
+
+.box_contacto .box_contacto_forms .row,
+.box_contacto .box_contacto_forms .col-12 {
+  margin-bottom: 40px;
+}
+
+.box_contacto .box_contacto_forms .row:last-child,
+.box_contacto .box_contacto_forms .col-12:last-child {
+  margin-bottom: 0;
+}
+
+.box_contacto .box_contacto_forms input,
+.box_contacto .box_contacto_forms textarea {
+  padding: 10px 16px;
+  border: 1px solid rgba(7, 13, 89, 0.02);
+  -webkit-box-shadow: 0px 30px 40px 0px rgba(46, 88, 255, 0.05);
+          box-shadow: 0px 30px 40px 0px rgba(46, 88, 255, 0.05);
+  border-radius: 20px;
+}
+
+.box_contacto .box_contacto_forms button {
+  padding: 6px 16px;
+  color: #fff;
+  background-color: #ee6f57;
+  border-radius: 30px;
+}
+
+.box_contacto .box_contacto_forms button:hover {
+  background-color: #ff876f;
+}
+
 footer {
   padding: 40px 0;
   color: #fff;
@@ -681,7 +845,7 @@ footer .box_footer_info .box_footer_info_logo {
 }
 
 footer .box_footer_info .box_footer_info_logo img {
-  height: 60px;
+  height: 50px;
 }
 
 footer .box_footer_info .box_footer_info_menus {
@@ -733,7 +897,7 @@ footer .box_footer_info .box_footer_info_redes ul {
   gap: 40px;
 }
 
-footer .box_footer_info .box_footer_info_redes ul li a .circle, footer .box_footer_info .box_footer_info_redes ul li a header .header_photos .header_photos_woman_circles .circle_1, header .header_photos .header_photos_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_1, footer .box_footer_info .box_footer_info_redes ul li a header .header_photos .header_photos_woman_circles .circle_2, header .header_photos .header_photos_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_2, footer .box_footer_info .box_footer_info_redes ul li a header .header_photos .header_photos_woman_circles .circle_3, header .header_photos .header_photos_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_3, footer .box_footer_info .box_footer_info_redes ul li a .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_1, .box_equipo .box_equipo_companer .box_equipo_companer_img footer .box_footer_info .box_footer_info_redes ul li a .circle_1, footer .box_footer_info .box_footer_info_redes ul li a .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_2, .box_equipo .box_equipo_companer .box_equipo_companer_img footer .box_footer_info .box_footer_info_redes ul li a .circle_2 {
+footer .box_footer_info .box_footer_info_redes ul li a .circle, footer .box_footer_info .box_footer_info_redes ul li a header .header_photos .header_photos_woman_circles .circle_1, header .header_photos .header_photos_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_1, footer .box_footer_info .box_footer_info_redes ul li a header .header_photos .header_photos_woman_circles .circle_2, header .header_photos .header_photos_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_2, footer .box_footer_info .box_footer_info_redes ul li a header .header_photos .header_photos_woman_circles .circle_3, header .header_photos .header_photos_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_3, footer .box_footer_info .box_footer_info_redes ul li a .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_1, .box_equipo .box_equipo_companer .box_equipo_companer_img footer .box_footer_info .box_footer_info_redes ul li a .circle_1, footer .box_footer_info .box_footer_info_redes ul li a .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_2, .box_equipo .box_equipo_companer .box_equipo_companer_img footer .box_footer_info .box_footer_info_redes ul li a .circle_2, footer .box_footer_info .box_footer_info_redes ul li a .box_contacto .box_contacto_woman .box_contacto_woman_circles .circle_1, .box_contacto .box_contacto_woman .box_contacto_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_1, footer .box_footer_info .box_footer_info_redes ul li a .box_contacto .box_contacto_woman .box_contacto_woman_circles .circle_2, .box_contacto .box_contacto_woman .box_contacto_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_2, footer .box_footer_info .box_footer_info_redes ul li a .box_contacto .box_contacto_woman .box_contacto_woman_circles .circle_3, .box_contacto .box_contacto_woman .box_contacto_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_3 {
   display: block;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -750,16 +914,16 @@ footer .box_footer_info .box_footer_info_redes ul li a .circle, footer .box_foot
   border-radius: 100%;
 }
 
-footer .box_footer_info .box_footer_info_redes ul li a .circle .bx, footer .box_footer_info .box_footer_info_redes ul li a header .header_photos .header_photos_woman_circles .circle_1 .bx, header .header_photos .header_photos_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_1 .bx, footer .box_footer_info .box_footer_info_redes ul li a header .header_photos .header_photos_woman_circles .circle_2 .bx, header .header_photos .header_photos_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_2 .bx, footer .box_footer_info .box_footer_info_redes ul li a header .header_photos .header_photos_woman_circles .circle_3 .bx, header .header_photos .header_photos_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_3 .bx, footer .box_footer_info .box_footer_info_redes ul li a .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_1 .bx, .box_equipo .box_equipo_companer .box_equipo_companer_img footer .box_footer_info .box_footer_info_redes ul li a .circle_1 .bx, footer .box_footer_info .box_footer_info_redes ul li a .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_2 .bx, .box_equipo .box_equipo_companer .box_equipo_companer_img footer .box_footer_info .box_footer_info_redes ul li a .circle_2 .bx {
+footer .box_footer_info .box_footer_info_redes ul li a .circle .bx, footer .box_footer_info .box_footer_info_redes ul li a header .header_photos .header_photos_woman_circles .circle_1 .bx, header .header_photos .header_photos_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_1 .bx, footer .box_footer_info .box_footer_info_redes ul li a header .header_photos .header_photos_woman_circles .circle_2 .bx, header .header_photos .header_photos_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_2 .bx, footer .box_footer_info .box_footer_info_redes ul li a header .header_photos .header_photos_woman_circles .circle_3 .bx, header .header_photos .header_photos_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_3 .bx, footer .box_footer_info .box_footer_info_redes ul li a .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_1 .bx, .box_equipo .box_equipo_companer .box_equipo_companer_img footer .box_footer_info .box_footer_info_redes ul li a .circle_1 .bx, footer .box_footer_info .box_footer_info_redes ul li a .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_2 .bx, .box_equipo .box_equipo_companer .box_equipo_companer_img footer .box_footer_info .box_footer_info_redes ul li a .circle_2 .bx, footer .box_footer_info .box_footer_info_redes ul li a .box_contacto .box_contacto_woman .box_contacto_woman_circles .circle_1 .bx, .box_contacto .box_contacto_woman .box_contacto_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_1 .bx, footer .box_footer_info .box_footer_info_redes ul li a .box_contacto .box_contacto_woman .box_contacto_woman_circles .circle_2 .bx, .box_contacto .box_contacto_woman .box_contacto_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_2 .bx, footer .box_footer_info .box_footer_info_redes ul li a .box_contacto .box_contacto_woman .box_contacto_woman_circles .circle_3 .bx, .box_contacto .box_contacto_woman .box_contacto_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_3 .bx {
   color: #2e58ff;
   font-size: 2rem;
 }
 
-footer .box_footer_info .box_footer_info_redes ul li a .circle .bx:hover, footer .box_footer_info .box_footer_info_redes ul li a header .header_photos .header_photos_woman_circles .circle_1 .bx:hover, header .header_photos .header_photos_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_1 .bx:hover, footer .box_footer_info .box_footer_info_redes ul li a header .header_photos .header_photos_woman_circles .circle_2 .bx:hover, header .header_photos .header_photos_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_2 .bx:hover, footer .box_footer_info .box_footer_info_redes ul li a header .header_photos .header_photos_woman_circles .circle_3 .bx:hover, header .header_photos .header_photos_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_3 .bx:hover, footer .box_footer_info .box_footer_info_redes ul li a .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_1 .bx:hover, .box_equipo .box_equipo_companer .box_equipo_companer_img footer .box_footer_info .box_footer_info_redes ul li a .circle_1 .bx:hover, footer .box_footer_info .box_footer_info_redes ul li a .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_2 .bx:hover, .box_equipo .box_equipo_companer .box_equipo_companer_img footer .box_footer_info .box_footer_info_redes ul li a .circle_2 .bx:hover {
+footer .box_footer_info .box_footer_info_redes ul li a .circle .bx:hover, footer .box_footer_info .box_footer_info_redes ul li a header .header_photos .header_photos_woman_circles .circle_1 .bx:hover, header .header_photos .header_photos_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_1 .bx:hover, footer .box_footer_info .box_footer_info_redes ul li a header .header_photos .header_photos_woman_circles .circle_2 .bx:hover, header .header_photos .header_photos_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_2 .bx:hover, footer .box_footer_info .box_footer_info_redes ul li a header .header_photos .header_photos_woman_circles .circle_3 .bx:hover, header .header_photos .header_photos_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_3 .bx:hover, footer .box_footer_info .box_footer_info_redes ul li a .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_1 .bx:hover, .box_equipo .box_equipo_companer .box_equipo_companer_img footer .box_footer_info .box_footer_info_redes ul li a .circle_1 .bx:hover, footer .box_footer_info .box_footer_info_redes ul li a .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_2 .bx:hover, .box_equipo .box_equipo_companer .box_equipo_companer_img footer .box_footer_info .box_footer_info_redes ul li a .circle_2 .bx:hover, footer .box_footer_info .box_footer_info_redes ul li a .box_contacto .box_contacto_woman .box_contacto_woman_circles .circle_1 .bx:hover, .box_contacto .box_contacto_woman .box_contacto_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_1 .bx:hover, footer .box_footer_info .box_footer_info_redes ul li a .box_contacto .box_contacto_woman .box_contacto_woman_circles .circle_2 .bx:hover, .box_contacto .box_contacto_woman .box_contacto_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_2 .bx:hover, footer .box_footer_info .box_footer_info_redes ul li a .box_contacto .box_contacto_woman .box_contacto_woman_circles .circle_3 .bx:hover, .box_contacto .box_contacto_woman .box_contacto_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_3 .bx:hover {
   color: #fff;
 }
 
-footer .box_footer_info .box_footer_info_redes ul li a .circle:hover, footer .box_footer_info .box_footer_info_redes ul li a header .header_photos .header_photos_woman_circles .circle_1:hover, header .header_photos .header_photos_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_1:hover, footer .box_footer_info .box_footer_info_redes ul li a header .header_photos .header_photos_woman_circles .circle_2:hover, header .header_photos .header_photos_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_2:hover, footer .box_footer_info .box_footer_info_redes ul li a header .header_photos .header_photos_woman_circles .circle_3:hover, header .header_photos .header_photos_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_3:hover, footer .box_footer_info .box_footer_info_redes ul li a .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_1:hover, .box_equipo .box_equipo_companer .box_equipo_companer_img footer .box_footer_info .box_footer_info_redes ul li a .circle_1:hover, footer .box_footer_info .box_footer_info_redes ul li a .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_2:hover, .box_equipo .box_equipo_companer .box_equipo_companer_img footer .box_footer_info .box_footer_info_redes ul li a .circle_2:hover {
+footer .box_footer_info .box_footer_info_redes ul li a .circle:hover, footer .box_footer_info .box_footer_info_redes ul li a header .header_photos .header_photos_woman_circles .circle_1:hover, header .header_photos .header_photos_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_1:hover, footer .box_footer_info .box_footer_info_redes ul li a header .header_photos .header_photos_woman_circles .circle_2:hover, header .header_photos .header_photos_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_2:hover, footer .box_footer_info .box_footer_info_redes ul li a header .header_photos .header_photos_woman_circles .circle_3:hover, header .header_photos .header_photos_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_3:hover, footer .box_footer_info .box_footer_info_redes ul li a .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_1:hover, .box_equipo .box_equipo_companer .box_equipo_companer_img footer .box_footer_info .box_footer_info_redes ul li a .circle_1:hover, footer .box_footer_info .box_footer_info_redes ul li a .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_2:hover, .box_equipo .box_equipo_companer .box_equipo_companer_img footer .box_footer_info .box_footer_info_redes ul li a .circle_2:hover, footer .box_footer_info .box_footer_info_redes ul li a .box_contacto .box_contacto_woman .box_contacto_woman_circles .circle_1:hover, .box_contacto .box_contacto_woman .box_contacto_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_1:hover, footer .box_footer_info .box_footer_info_redes ul li a .box_contacto .box_contacto_woman .box_contacto_woman_circles .circle_2:hover, .box_contacto .box_contacto_woman .box_contacto_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_2:hover, footer .box_footer_info .box_footer_info_redes ul li a .box_contacto .box_contacto_woman .box_contacto_woman_circles .circle_3:hover, .box_contacto .box_contacto_woman .box_contacto_woman_circles footer .box_footer_info .box_footer_info_redes ul li a .circle_3:hover {
   background-color: #ee6f57;
 }
 
