@@ -567,11 +567,12 @@ header {
       .img_perfil {
         overflow: hidden;
         width: 300px;
+        height: 300px;
         border-radius: 100%;
 
         img {
           position: relative;
-          left: -20%;
+          left:0;
         }
       }
 
@@ -587,13 +588,13 @@ header {
 
       .circle_1 {
         top: -60px;
-        right: -150px;
+        right: -20px;
         @extend .circle;
       }
 
       .circle_2 {
         top: -60px;
-        right: 150px;
+        right: 0;
         @extend .circle;
       }
     }

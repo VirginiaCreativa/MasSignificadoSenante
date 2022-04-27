@@ -615,12 +615,13 @@ header .header_photos .header_photos_woman_circles .circle_3 {
 .box_equipo .box_equipo_companer .box_equipo_companer_img .img_perfil {
   overflow: hidden;
   width: 300px;
+  height: 300px;
   border-radius: 100%;
 }
 
 .box_equipo .box_equipo_companer .box_equipo_companer_img .img_perfil img {
   position: relative;
-  left: -20%;
+  left: 0;
 }
 
 .box_equipo .box_equipo_companer .box_equipo_companer_img .circle, .box_equipo .box_equipo_companer .box_equipo_companer_img header .header_photos .header_photos_woman_circles .circle_3, header .header_photos .header_photos_woman_circles .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_3, .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_1, .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_2, .box_equipo .box_equipo_companer .box_equipo_companer_img .box_contacto .box_contacto_woman .box_contacto_woman_circles .circle_3, .box_contacto .box_contacto_woman .box_contacto_woman_circles .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_3 {
@@ -635,12 +636,12 @@ header .header_photos .header_photos_woman_circles .circle_3 {
 
 .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_1 {
   top: -60px;
-  right: -150px;
+  right: -20px;
 }
 
 .box_equipo .box_equipo_companer .box_equipo_companer_img .circle_2 {
   top: -60px;
-  right: 150px;
+  right: 0;
 }
 
 .box_equipo .box_equipo_companer .box_equipo_companer_info h4 {
