@@ -493,6 +493,17 @@ header .header_photos .header_photos_woman_circles .circle_3 {
   margin-bottom: 60px;
 }
 
+.box_palabra_detalle .box_palabra_detalle_definition .box_selection_video {
+  overflow: hidden;
+  max-height: 100%;
+  height: 240px;
+}
+
+.box_palabra_detalle .box_palabra_detalle_definition .box_selection_video video {
+  width: 100%;
+  height: 100%;
+}
+
 .box_palabra_detalle .box_palabra_detalle_definition .title {
   position: relative;
 }
