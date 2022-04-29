@@ -56,6 +56,19 @@ nav .nav li a:hover, nav .nav li a.active {
   outline-style: none !important;
 }
 
+.search .bx-slider-alt, header .header_search .bx-slider-alt, .box_palabras .box_palabras_search .bx-slider-alt {
+  position: absolute;
+  top: 8px;
+  right: 50px;
+  color: #c3c3c3;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.search .bx-slider-alt:hover, header .header_search .bx-slider-alt:hover, .box_palabras .box_palabras_search .bx-slider-alt:hover {
+  color: #2e58ff;
+}
+
 .search .btnSearch, header .header_search .btnSearch, .box_palabras .box_palabras_search .btnSearch {
   position: absolute;
   right: 0;
@@ -130,12 +143,20 @@ nav .nav li a:hover, nav .nav li a.active {
 .box_selection .box_selection_video {
   overflow: hidden;
   max-height: 100%;
-  height: 240px;
+  margin-bottom: 5px;
 }
 
 .box_selection .box_selection_video video {
   width: 100%;
   height: 100%;
+}
+
+.box_selection .definition {
+  min-height: 60px;
+}
+
+.box_selection .definition p {
+  margin-bottom: 0;
 }
 
 .box_selection a.link {
@@ -172,7 +193,7 @@ nav .nav li a:hover, nav .nav li a.active {
 }
 
 header {
-  padding: 60px 0 0;
+  padding: 20px 0 0;
   background-color: #eff5ff;
 }
 
@@ -382,7 +403,7 @@ header .header_photos .header_photos_woman_circles .circle_3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .box_main .box_main_title h1 {
